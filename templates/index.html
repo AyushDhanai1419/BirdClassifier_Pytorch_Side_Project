@@ -3,11 +3,14 @@
     <head>
         <title>My Bird Application</title>
     </head>
-    <body>
-        <h1> Upload your bird image here --</h1>
-        <form method="post" enctype=multipart/form-data>
-            <input type="file" name="file">
-            <input type="submit" value="upload">
-        </form>
+    <body background="./static/wall1.jpg" style="background-position: center" >
+        <div style="text-align:center">
+            <h1 style="color:white"> Upload your bird image !</h1>
+            <img src="../static/Wall_img.jpg" alt="Cover pic" height="250" width="300">
+            <form method="post" enctype=multipart/form-data style="margin:30px;color:white">
+                <input type="file" name="file"><br><br>
+                <input type="submit" value="upload">
+            </form>
+        </div>
     </body>
 </html>

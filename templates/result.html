@@ -3,12 +3,14 @@
     <head>
         <title>My Bird Application</title>
     </head>
-    <body>
-        <h1> Result : </h1>
-        <h2>Predictions</h2>
-        <p>Bird Species : {{ predicted_bird }}</p>
-        <p>Bird Category : {{ bird_category }}</p>
-        <p>About this bird : {{ about_bird }}</p>
-        <a href="">Go To HomePage</a>
+    <body background="./static/wall2.jpg" style="background-position: center">
+        <div style="text-align:center"><br><br>
+            <h1>Predictions</h1><br>
+            <p><b>Bird Species :</b> {{ predicted_bird }}</p>
+            <p><b>Bird Category :</b> {{ bird_category }}</p>
+            <p><b>About this bird </b></p>  <p> {{ about_bird }} </p>
+            <br><br>
+            <button onclick="window.location.href=''">Homepage</button>
+        </div>
     </body>
 </html>
