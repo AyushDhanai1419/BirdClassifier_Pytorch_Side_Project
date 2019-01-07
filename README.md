@@ -33,6 +33,9 @@
 
 <h2>&nbsp;&nbsp;<b>Screenshots of working application</b></h2><br/>
   <h3>&nbsp;&nbsp;<b>Homepage -</b>upload the image from your device into the application and then model will predict &nbsp;&nbsp;the species of the bird and display information regarding that particular species.</h3>
+<img src="/static/homepage.jpg"/><br/><br/>
+  <h3>&nbsp;&nbsp;<b>Displaying result</b></h3>
+<img src="/static/result_page.jpg"/>
 
 
 <h4>&nbsp;&nbsp;Let us know if any issue arise and we'd love your contribution in making this project even better.</h4>
