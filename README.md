@@ -21,9 +21,21 @@
    <li><a href="https://pypi.org/project/Pillow/">Pillow</a></li>
    <li><a href="https://pypi.org/project/wikipedia/">wikipedia</a></li>
 </ol>
+<h2>Running this project</h2>
+<ol>
+  <li>Clone or download the repository on your local machine</li>
+  <li>Make sure all the dependencies are installed</li>
+  <li>open the teminal and change current working directory to project directory</li>
+  <li>set the value of FLASK_APP environment variable to "application.py"</li>
+  <li>run command "flask run" inside the terminal</li>
+</ol>
 <h2><b>About the project - <b></h2><h4>Creating a web application with the help of convolutional neural networks and transfer learning, that can be used to detect the species of the bird from its image. Application can be proved useful in the field of Ornithology (branch of zoology concern with the study of birds) and can also be used by people interested in wildlife photography.</h4>
+
 <h2>&nbsp;&nbsp;<b>Screenshots of working application</b></h2><br/>
   <h3>&nbsp;&nbsp;<b>Homepage -</b>upload the image from your device into the application and then model will predict &nbsp;&nbsp;the species of the bird and display information regarding that particular species.</h3>
-<img src="/static/homepage.jpg"><br/><br/>
+<img src="/static/homepage.jpg"/><br/><br/>
   <h3>&nbsp;&nbsp;<b>Displaying result</b></h3>
-<img src="/static/result_page.jpg">
+<img src="/static/result_page.jpg"/>
+
+
+<h4>&nbsp;&nbsp;Let us know if any issue arise and we'd love your contribution in making this project even better.</h4>
