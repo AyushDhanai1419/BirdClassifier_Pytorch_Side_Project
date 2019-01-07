@@ -5,3 +5,6 @@ numpy==1.15.4
 Pillow==5.3.0
 gunicorn==19.9.0
 wikipedia
+
+
+https://drive.google.com/file/d/1-52XO5-2Em28COyqJET_1DpNuedodVUR/view?usp=sharing
