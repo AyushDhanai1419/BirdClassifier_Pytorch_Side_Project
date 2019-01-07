@@ -1,7 +1,6 @@
 from flask import Flask, render_template,request
-from commons import get_tensor
+from commons import get_tensor, get_bird_information
 from inference import get_bird_name
-
 app = Flask(__name__)
 
 
@@ -21,7 +20,11 @@ def index():
         
         image_file = file_read.read()
         bird_name, category = get_bird_name(image_bytes=image_file)
-        return render_template('result.html',predicted_bird=bird_name,bird_category=category)
+
+        # getting information about the predicted bird species 
+        bird_name.replace('_',' ')
+        about_bird_species = get_bird_information(bird_name)
+        return render_template('result.html',predicted_bird=bird_name,bird_category=category,about_bird=about_bird_species)
 
 
 if __name__ == '__main__':
