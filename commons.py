@@ -4,6 +4,7 @@ from torchvision import models
 from PIL import Image
 import io 
 import torchvision.transforms as transforms
+import wikipedia as wk 
 
 def get_model():
     """ This function will give us the model """
@@ -31,4 +32,12 @@ def get_tensor(image_bytes):
                                         )])
     image = Image.open(io.BytesIO(image_bytes))
     return my_transforms(image).unsqueeze(0)
-            
+
+def get_bird_information(bird_name):
+    """ This function takes a bird's species as an input and then returns information about that species"""
+    try:
+        about_bird = wk.summary(bird_name)
+    except wk.exceptions.DisambiguationError:
+        about_bird = "Nothing found about this bird"
+
+    return about_bird
