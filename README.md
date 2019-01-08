@@ -6,6 +6,7 @@
   <li><b>Akhil Tiwari</b> &nbsp &nbsp- Slack Id : <i>@Akhil_Tiwari</i></li>
 </ul>
 
+<h2>Deployed Project Link : https://birds-classifier-200.herokuapp.com/</h2>
 <h2>Architecture and details of the model</h2>
 <ul>
   <li><b>Pre-Trained Model used :</b> Densenet121</li>
