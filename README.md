@@ -1,4 +1,11 @@
 <h1>BirdClassifier_Pytorch_Side_Project</h1>
+
+<h2>Contibuters</h2>
+<ul>
+  <li><b>Ayush Dhanai</b> - Slack Id : <i>@Ayush Dhanai</i></li>
+  <li><b>Akhil Tiwari</b> &nbsp &nbsp- Slack Id : <i>@Akhil_Tiwari</i></li>
+</ul>
+
 <h2>Architecture and details of the model</h2>
 <ul>
   <li><b>Pre-Trained Model used :</b> Densenet121</li>
