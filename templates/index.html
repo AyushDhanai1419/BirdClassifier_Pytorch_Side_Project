@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Bird Application</title>
+        <title>BIRDMAN</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9a069e80bc.js"></script>
     </head>
-    <body background="./static/wall1.jpg" style="background-position: center" >
-        <div style="text-align:center">
-            <h1 style="color:white"> Upload your bird image !</h1>
-            <img src="../static/Wall_img.jpg" alt="Cover pic" height="250" width="300">
-            <form method="post" enctype=multipart/form-data style="margin:30px;color:white">
-                <input type="file" name="file"><br><br>
-                <input type="submit" value="upload">
-            </form>
-
+    <body>
+        <div class="main-container">
+            <!-- Header Begins -->
+            <header>
+                <div class = "wrapper">
+                    <div class="branding">
+                        <a href="index.html"><h1><span class = "highlight">BIRDMAN</span><u>(The Bird Classifier)</u></h1></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="https://github.com/AyushDhanai1419/BirdClassifier_Pytorch_Side_Project" target="_blank">Github</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- Header Ends -->
             
-            <h5><span style="color:white">Made With Love by :</span> Ayush Dhanai | Akhil Tiwari</h5>
-            <h5><span style="color:white">Slack Id ::</span> @Ayush Dhanai | @Akhil_Tiwari</h5>
+             <!-- Upload Image Start -->
+             <section class = "showcase-items-form">
+                <h3>Let's test the Classifier</h3>
+                <form method="post" enctype=multipart/form-data>
+                    <input type="file" name="file" class="select-file"><br><br>
+                    <input type="submit" class="btn" value="upload">
+                </form>
+            </section>
+            <!-- Upload Image Ends -->
+
+            <!-- Project Specs Start -->
+            <section>
+                <div class = "showcase">
+                    <div class = "showcase-items">
+                        <h3>Accuracy</h3>
+                        <p>Our model was able to achieve an accuracy of 94.5% on the test dataset.</p>
+                    </div>
+                    <div class = "showcase-items">
+                        <h3>Dataset</h3>
+                        <p>We've used <a href="http://www.vision.caltech.edu/visipedia/CUB-200.html" target="_blank"><u>Caltech-UCSD Birds 200 </u></a>dataset for training and testing the model.</p>
+                    </div>
+                    <div class = "showcase-items">
+                        <h3>Transfer Learning</h3>
+                        <p>We've trained the model by using transfer learning on Densenet-121 convolutional neural network.</p>
+                    </div>
+                    <div class = "showcase-items">
+                        <h3>Hyper-parameters</h3>
+                        <p>Optimizer: ADAM <br> Loss Function: NLLLoss <br>LR Scheduler: StepLR<br> Batch Size: 90<br> Learning Rate: 0.001</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Specs Ends -->
+
         </div>
+        
+        <!-- Footer Start -->
+        <footer>
+            Techian Corporation &copy; 2019
+        </footer>
+        <!-- Footer Ends -->
+    
     </body>
 </html>
